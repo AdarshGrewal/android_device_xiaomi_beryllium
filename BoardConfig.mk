@@ -22,6 +22,10 @@ TARGET_HW_DISK_ENCRYPTION := true
 BOARD_HAS_QCA_FM_SOC := "cherokee"
 BOARD_HAVE_QCOM_FM := true
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_beryllium
+TARGET_RECOVERY_DEVICE_MODULES := libinit_beryllium
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 
